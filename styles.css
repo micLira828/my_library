@@ -1,0 +1,16 @@
+#container, .button_container{
+  display: flex;
+}
+#container div, button{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container div button{
+  display: none;
+}
+#container div:hover button{
+  display: block;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href = "styles.css" type = "text/css" rel = "stylesheet"/>
+    <title>Library</title>
+</head>
+
+<body>
+  <button id = "create_new">Create New Book</button>
+   <form id = "create_form">
+     <fieldset>
+       <legend>Please add your book</legend>
+       <label for="title">Title:</label>
+       <input type="text" name="title" id="title" value="The Birds and the Bees" />
+       
+       <label for="author">Author:</label>
+        <input type="text" name="author" id="author" value="Mr. Lisa" />
+        
+        <label for="pages">Pages:</label>
+        <input type ="number" name="pages" id="pages" value="223" />
+        
+        <label for="read">Read?</label>
+        <input type="checkbox" name="read" id="read" value="Read?" />
+        
+        <button type="submit" name="confirmCreate" id="confirmCreate" value="create">Create</button>
+     </fieldset>
+   </form>
+   <div id = "container">
+     
+   </div>
+   <script src = "scripts.js"></script>
+   
+</body>
+
+</html>
