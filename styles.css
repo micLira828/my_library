@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400&display=swap');
+
 body{
-  background-image: url('bookshelf.JPEG');
+  background-image: url('bookshelf.JPG');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -20,4 +22,26 @@ body{
 }
 #container div:hover button{
   display: block;
+}
+
+.book_cover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #90ee90;
+  font-family: 'Merriweather', serif;
+}
+
+.book_cover h6{
+  font-size: 1.75em;
+}
+
+.book_cover p{
+  font-size: 1.25em;
+}
+
+.remove_button{
+  padding: 0.1rem;
 }
