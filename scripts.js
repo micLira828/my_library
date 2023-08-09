@@ -62,7 +62,8 @@ function displayBooks(array){
     
     bookCover.style.width = '200px';
     bookCover.style.height = '300px';
-    bookCover.style.backgroundColor = "blue";
+    bookCover.style.backgroundImage = "url('book_cover.png')";
+    bookCover.style.backgroundImage = "cover";
     bookCover.innerHTML = '<h6>' + array[i].title+ '</h6>' + '<p>' + 'by ' + array[i].author + '</p>';
     document.getElementById('container').appendChild(bookCover);
 

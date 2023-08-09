@@ -1,3 +1,10 @@
+body{
+  background-image: url('bookshelf.JPEG');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 #container, .button_container{
   display: flex;
 }
