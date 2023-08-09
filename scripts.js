@@ -46,7 +46,7 @@ function displayBooks(array){
     removeButton.style.width = '50px';
     removeButton.style.height = '25px';
     removeButton.style.backgroundColor = "yellow";
-    removeButton.innerHTML= "Remove";
+    removeButton.innerHTML= "Erase";
     removeButton.className = "remove_button";
     removeButton.addEventListener('click', e => {
     e.preventDefault();
@@ -60,10 +60,11 @@ function displayBooks(array){
     buttonContainer.appendChild(readCheckBox);
     buttonContainer.style.display = "flex";
     
+    
     bookCover.style.width = '200px';
     bookCover.style.height = '300px';
     bookCover.style.backgroundImage = "url('book_cover.png')";
-    bookCover.style.backgroundImage = "cover";
+    bookCover.className = "book_cover";
     bookCover.innerHTML = '<h6>' + array[i].title+ '</h6>' + '<p>' + 'by ' + array[i].author + '</p>';
     document.getElementById('container').appendChild(bookCover);
 
