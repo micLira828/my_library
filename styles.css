@@ -60,7 +60,7 @@ form fieldset, button{
   background-image: url('wood.jpeg');
   border: none;
   box-shadow: 10px 5px 5px brown;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 button{
