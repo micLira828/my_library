@@ -68,3 +68,8 @@ button{
   margin: 5px;
   font-family: 'Merriweather', serif;
 }
+
+.button_container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}

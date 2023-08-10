@@ -37,6 +37,13 @@ function displayBooks(array){
     
     let readCheckBox = document.createElement("input");
    
+
+    const label_chk = document.createElement("label");
+    buttonContainer.appendChild(label_chk);
+
+    
+    label_chk.textContent = "Read? ";
+
     readCheckBox.type = "checkbox";
     readCheckBox.name = "is_read";
     readCheckBox.value = "Read?";
@@ -58,7 +65,7 @@ function displayBooks(array){
     
     buttonContainer.appendChild(removeButton);
     buttonContainer.appendChild(readCheckBox);
-    buttonContainer.style.display = "flex";
+    buttonContainer.className = "button_container";
     
     
     bookCover.style.width = '200px';
