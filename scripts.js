@@ -34,16 +34,13 @@ function displayBooks(array){
   for(let i = 0; i < array.length; i++ ){
     let bookCover = document.createElement("div");
     let buttonContainer = document.createElement("div");
-    
-    let readCheckBox = document.createElement("input");
-   
-
     const label_chk = document.createElement("label");
-    buttonContainer.appendChild(label_chk);
+    
 
     
     label_chk.textContent = "Read? ";
 
+    let readCheckBox = document.createElement("input");
     readCheckBox.type = "checkbox";
     readCheckBox.name = "is_read";
     readCheckBox.value = "Read?";
@@ -52,7 +49,6 @@ function displayBooks(array){
     let removeButton = document.createElement("button");
     removeButton.style.width = '50px';
     removeButton.style.height = '25px';
-    removeButton.style.backgroundColor = "yellow";
     removeButton.innerHTML= "Erase";
     removeButton.className = "remove_button";
     removeButton.addEventListener('click', e => {
@@ -63,10 +59,9 @@ function displayBooks(array){
     displayBooks(array);
   });
     
-    buttonContainer.appendChild(removeButton);
+    buttonContainer.appendChild(label_chk);
     buttonContainer.appendChild(readCheckBox);
-    buttonContainer.className = "button_container";
-    
+    buttonContainer.appendChild(removeButton);
     
     bookCover.style.width = '200px';
     bookCover.style.height = '300px';
